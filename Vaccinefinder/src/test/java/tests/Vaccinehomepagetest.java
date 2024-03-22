@@ -25,7 +25,7 @@ public class Vaccinehomepagetest
 		vaccinehomepage = new Vaccinehomepage(driver);
 		covidcasespage= new Covidcasespage(driver);
 		aboutpage = new Aboutpage(driver);
-		driver.get("url"); 
+		driver.get(url); 
 		driver.manage().window().maximize();
 	}
 	
