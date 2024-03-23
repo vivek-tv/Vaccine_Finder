@@ -29,6 +29,21 @@ public class Vaccinehomepage {
 		PageFactory.initElements(driver, this);
 	
 	}
+
+		public void titleverification()
+	{
+		String expTitle="Vaccine Finder | Total Cases";
+		String acttitle=driver.getTitle();
+		System.out.println(acttitle);
+		if(acttitle.equals(expTitle))
+		{
+			System.out.println("tile matched and verified");
+		}
+		else
+		{
+			System.out.println("title not matched");
+		}
+	}
 	public void clickdownloadcertificate() 
 	{
 		
