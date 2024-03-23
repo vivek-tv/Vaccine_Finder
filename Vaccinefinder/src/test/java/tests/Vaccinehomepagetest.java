@@ -12,7 +12,7 @@ import pages.Vaccinehomepage;
 
 public class Vaccinehomepagetest 
 {
-	public static RemoteWebDriver driver; 
+	 
 	private Vaccinehomepage vaccinehomepage; 
 	private Covidcasespage covidcasespage;
 	private Aboutpage aboutpage;
@@ -40,7 +40,7 @@ public class Vaccinehomepagetest
 		covidcasespage.clickpiechart();
 	}
 	@Test(priority=2)
-	public void homepagetest() throws InterruptedException 
+	public void homepagetest()  
 	{ 
 		
 		
@@ -53,9 +53,9 @@ public class Vaccinehomepagetest
 	} 
 	
 	@Test(priority=3)
-	public void aboutpg() throws InterruptedException
+	public void aboutpg() 
 	{
-		
+		aboutpage.clickabout();
 		aboutpage.tab();
 		aboutpage.cwin();
 		aboutpage.tab();
@@ -66,6 +66,6 @@ public class Vaccinehomepagetest
 	@AfterTest 
 	public void quit()
 	{ 
-				driver.quit(); 
+		driver.quit(); 
 	}
 }
